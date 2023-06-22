@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .image {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Home Page</h1>
+            <img class="image" src="{{ url_for('static', filename='cat.png') }}" style= "width:25%;" alt="Cat">
+        </div>
+        
+        <div class="container">
+            <p><a href="/aboutme" style="color:black; font-size:25px;">About Me</a></p> 
+            <p><a href="/contact" style="color:black; font-size:25px;">Contact</a></p> 
+            <p><a href="/gallery" style="color:black; font-size:25px;">Gallery</a></p> 
+        </div>
+    </body>
+</html>

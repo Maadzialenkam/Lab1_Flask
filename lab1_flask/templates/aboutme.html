@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ABOUT ME</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .image {
+                margin-bottom: 10px;
+            }
+
+            .description {
+                font-family: 'Aboreto', cursive;
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 26px;
+                font-weight: bold; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Gallery</h1>
+            <img src="{{ url_for('static', filename='gallery.png')  }}" width="100" height="100" alt="Contact"><br>
+
+        </div>
+        <div class="description">
+            <p>Crazy cat lover, obsessed with all things feline! <br>
+                Join me in celebrating the adorable whiskers, playful paws, and endless purrs. <br>
+                Sharing my journey filled with meowgical moments, cute cat videos, and kitty adventures. <br>
+                Get ready for a daily dose of feline cuteness and kitty shenanigans!</p>
+        </div>
+    </body>
+    <footer>
+        <div class="container">
+            <p><a href="/" style="color:black; font-size:25px;">Home</a></p> 
+
+            <img class="image" src="{{ url_for('static', filename='kot2.gif') }}" style= "width:25%;" alt="Cat">
+
+        </div>
+    </footer>
+</html>
+</html>
